@@ -6,5 +6,7 @@ pipeline{
 	      }
 	   stage(build){
 	       mvn clean build
+           stage(test){
+               mvn clean test
 	    }
 	   }
