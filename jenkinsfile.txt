@@ -8,5 +8,7 @@ pipeline{
 	       mvn clean build
            stage(test){
                mvn clean test
+           stage(sonarqube)
+                sonar --sonar
 	    }
 	   }
