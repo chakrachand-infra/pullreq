@@ -4,5 +4,7 @@ pipeline{
            stage(checkoutcode){
 	      git "git-reepo"
 	      }
-	    
+	   stage(build){
+	       mvn clean build
+	    }
 	   }
