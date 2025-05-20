@@ -1,0 +1,8 @@
+pipeline{
+    agent any{
+       stages{
+           stage(checkoutcode){
+	      git "git-reepo"
+	      }
+	    
+	   }
